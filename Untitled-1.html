@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<script src="https://kit.fontawesome.com/6377da5ebe.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>EVKK</title>
+</head>
+<body>
+
+	<header>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" alt="TLU"></a>
+			<a href="index.html"><h1>Eesti Vahekeele Korpus</h1></a>
+			<i id='help-toggle' class="far fa-question-circle tooltip-green" aria-label="Kuvab lisa informatsiooni" data-balloon-pos="left">?</i>
+		</div>
+
+		<!-- Navigation -->
+		<section class="navContainer">
+			<nav>
+				<a href="home.html">Avaleht</a>
+				<a href="index.html" class="activeNav">Statistika</a>
+				<a href="paring.html">Päring</a>
+				<a href="meist.html">Meist</a>
+				<a href="kontakt.html">Kontakt</a>
+			</nav>
+		</section>
+	</header>
+
+
+	<!-- Interactive stats section -->
+	<section>
+
+		<!-- Filters (left side) -->
+		<div class="dropdown">
+			<h2>Alamkorpused</h2>
+			<form>
+					<!-- Buttons to check or uncheck everything -->
+					<div id="buttons">
+						<button type="button" id="selectAllKorpus">Kõik</button>
+						<button type="button" id="unselectAllKorpus">Eemalda</button>
+					</div>
+
+					<!-- Korpus selection -->
+					<div id="korpusSelection">
+						<input type="checkbox" name="korpus"
+						value="cFqPphvYi" class="btn-check" id="btn-check0" autocomplete="off" checked/>
+						<label class="checkbox" for="btn-check0"><i class="fas fa-check"></i><span>Eesti keele olümpiaadi tööd</span></label>
+						
+						<input type="checkbox" name="korpus"
+						value="cwUSEqQLt" type="checkbox" class="btn-check" id="btn-check2" autocomplete="off" checked/>
+						<label class="checkbox"  for="btn-check2"><i class="fas fa-check"></i></i><span>Akadeemiline õppijakeel</span></label>
+						
+						<input type="checkbox" name="korpus"
+						value="cwUprXCTL" class="btn-check" id="btn-check3" autocomplete="off" checked/>
+						<label class="checkbox"  for="btn-check3"><i class="fas fa-check"></i><span>Eesti teaduskeel</span></label>
+	
+						<input type="checkbox" name="korpus"
+						value="cFOoRQekA" class="btn-check" id="btn-check4" autocomplete="off" checked/>
+						<label class="checkbox"  for="btn-check4"><i class="fas fa-check"></i><span>EVKK</span></label>
+	
+						<input type="checkbox" name="korpus"
+						value="clWmOIrLa" class="btn-check" id="btn-check5" autocomplete="off" checked/>
+						<label class="checkbox"  for="btn-check5"><i class="fas fa-check"></i><span>REKKi kogud</span></label>
+	
+						<input type="checkbox" name="korpus"
+						value="cZjHWUPtD" class="btn-check" id="btn-check6" autocomplete="off" checked/>
+						<label class="checkbox"  for="btn-check6"><i class="fas fa-check"></i><span>Vene keel kui võõrkeel</span></label>
+	
+						<input type="checkbox" name="korpus"
+						value="cgSRJPKTr" class="btn-check" id="btn-check7" autocomplete="off" checked/>
+						<label class="checkbox"  for="btn-check7"><i class="fas fa-check"></i><span>Vene keel kui emakeel</span></label>
+	
+						<input type="checkbox" name="korpus"
+						value="cYDRkpymb" class="btn-check" id="btn-check8" autocomplete="off" checked/>
+						<label class="checkbox"  for="btn-check8"><i class="fas fa-check"></i><span>K1 referentskorpus</span></label>
+					</div>
+				</form>
+
+			</div>
+			
+		</div>
+
+		<!-- Stats (right side) -->
+		<div class="stats">
+			<h2>Tekstid vanuse järgi</h2>
+			<div id="alamkorpused" class="echarts"></div>
+		</div>
+	</section>
+		<!-- Interactive stats section -->
+		<section>
+				
+			<div class="dropdownike">
+				<button id="Isiku_heading2">Isiku Andmed</button>
+				<div id="Isiku_heading2_filtrid">
+					<div id="sugu">
+						<button id="sugu_filter">Sugu:</button>
+						<div id="Sugu_Filter_Nupud">
+							
+						</div>
+					</div>
+					<div id="elukoht">
+						<button id="Elukoht_Filter">Elukoht:</button>
+						<div id="Elukoht_Filter_Nupud">
+						</div>
+					</div>
+					<div id="vanus">
+						<button id="Vanus_Filter">vanus:</button>
+						<div id="Vanus_Filter_Nupud">
+						</div>
+					</div>
+					<div id="haridus">
+						<button id="Haridus_Filter">haridus:</button>
+						<div id="Haridus_Filter_Nupud">
+						</div>
+					</div>
+					<div id="emakeel">
+						<button id="Emakeel_Filter">emakeel:</button>
+						<div id="Emakeel_Filter_Nupud">
+						</div>
+					</div>	
+					<div id="keelevaldamisetase">
+						<button id="Keelevaldamisetase_Filter">keelevaldamisetase:</button>
+						<div id="Keelevaldamisetase_Filter_Nupud">
+						</div>
+					</div>
+					<div id="sotsiaalnetaust">
+						<button id="sotsiaalnetaust_Filter">sotsiaalnetaust:</button>
+						<div id="sotsiaalnetaust_Filter_Nupud">
+						</div>
+					</div>
+					<div id="kodunekeel">
+						<button id="Kodunekeel_Filter">kodunekeel:</button>
+						<div id="Kodunekeel_Filter_Nupud">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dropdownike1">
+				<button id="Teksti_heading2">Teksti Andmed</button>
+				<div id="Teksti_heading2_filtrid">
+					<div id="tekstikeel">
+						<button id="Tekstikeel_filter">tekstikeel:</button>
+						<div id="Tekstikeel_Filter_Nupud">
+							
+						</div>
+					</div>
+					<div id="tekstityyp">
+						<button id="tekstityyp_Filter">tekstityyp:</button>
+						<div id="tekstityyp_Filter_Nupud">
+						</div>
+					</div>
+					<div id="abivahendid">
+						<button id="abivahendid_Filter">abivahendid:</button>
+						<div id="abivahendid_Filter_Nupud">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clean">
+				<div id="clearall">
+					<button id="clear_all">Eemalda valikud</button>
+					</div>
+				</div>
+			</div>
+
+	
+			<h2>Väärtused</h2>
+				<div class="dropdownike2">
+				<select id="filterByrere" name="filterByreree">
+					<option value="protsent">protsent</option>
+					<option value="tekste">tekste</option>
+					<option value="vigu">vigu</option>
+					<option value="lauseid">lauseid</option>
+					<option value="s6nu">sõnu</option>
+	
+				</select>
+				</div>
+			<h2>Reas</h2>
+				<div class="dropdownike3">
+					<select id="filterBymehike" name="filterBymehike">
+						<option value="vanus">Vanus</option>
+						<option value="haridus">Haridus</option>
+						<option value="sugu">Sugu</option>
+						<option value="elukoht">Elukoht</option>
+						<option value="kodukeel">Kodune keel</option>
+						<option value="emakeel">Emakeel</option>
+						<option value="tekstikeel">Tekstikeel</option>
+						<option value="abivahendid">Abivahendid</option>
+						<option value="taust">Sotsiaalne staatus</option>
+						<option value="keeletase">Keele valdamise tase</option>
+						<option value="tekstityyp">Tekstitüüp</option>
+					</select>
+				</div>
+	
+			<h2>Veerus</h2>
+				<div class="dropdownike4">
+				<select id="filterBy" name="filterBy">
+					<option value="vanus">Vanus</option>
+					<option value="haridus">Haridus</option>
+					<option value="sugu">Sugu</option>
+					<option value="elukoht">Elukoht</option>
+					<option value="kodukeel">Kodune keel</option>
+					<option value="emakeel">Emakeel</option>
+					<option value="tekstikeel">Tekstikeel</option>
+					<option value="abivahendid">Abivahendid</option>
+					<option value="taust">Sotsiaalne staatus</option>
+					<option value="keeletase">Keele valdamise tase</option>
+					<option value="tekstityyp">Tekstitüüp</option>
+				</select>
+				</div>
+			</div>
+	
+	
+		</section>
+
+	<!-- Mini stats -->
+	<section class="miniStats">
+		<p id=documents2>Dokumente<br><span id="documents"></span></p>
+		<p id=sentences2>Lauseid<br><span id="sentences"></span></p>
+		<p id=words2>Sõnu<br><span id="words"></span></p>
+	</section>
+
+	<!-- Footer -->
+	<section>
+		<footer>
+			<p>Tallinna Ülikool 2021</p>
+		</footer>
+	</section>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="scripts/echarts.js"></script>
+	<script src="scripts/stats.js"></script>
+	
+	<script src="scripts/Filtriteautotiseerimine.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
