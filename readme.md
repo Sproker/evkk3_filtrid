@@ -123,8 +123,14 @@ unzip master.zip
 **Kindlasti oodake käsklused lõpuni enne kui liigute järgmisesse aknasse!**
 ```bash
 cd evkk/evkk-main && sudo compose-up
+```
+```bash
 cd evkk/evkk-main && sudo ./gradlew:db:bootRun --args 'clean migrate seed'
+```
+```bash
 cd evkk/evkk-main && ./gradlew :api:bootRun
+```
+```bash
 cd evkk/evkk-main && yarn --cwd=./ui install && yarn --cwd=./ui start
 ```
 
@@ -137,9 +143,17 @@ localhost:3000/evkk
 **Iga järgneva käivituse osa jaoks tuleb luua uus ubuntu aken:**
 ```bash
 sudo dockerd
+```
+```bash
 cd evkk/evkk-main && sudo compose-up
+```
+```bash
 cd evkk/evkk-main && sudo ./gradlew:db:bootRun --args 'clean migrate seed'
+```
+```bash
 cd evkk/evkk-main && ./gradlew :api:bootRun
+```
+```bash
 cd evkk/evkk-main && yarn --cwd=./ui install && yarn --cwd=./ui start
 ```
 ### Testid ja testimise tulemused:
