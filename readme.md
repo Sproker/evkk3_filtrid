@@ -38,7 +38,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ```
 ### Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata.
 
-### Kui taaskäivitus on tehtud, laadige alla järgnev uuendus: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi 
+### Kui taaskäivitus on tehtud, laadige alla järgnev [komponent](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) 
 
 Peale seda käivitage allalaetud uuendus ning laske sellel end ära installeerida.
 
@@ -115,7 +115,7 @@ cd evkk/evkk-main && sudo ./gradlew:db:bootRun --args 'clean migrate seed'
 cd evkk/evkk-main && ./gradlew :api:bootRun
 cd evkk/evkk-main && yarn --cwd=./ui install && yarn --cwd=./ui start
 ```
-Kui kõik käsud said sisestatud, siis veebileht teile automaatselt avanema järgmisel aadressil:
+**Kui kõik käsud said sisestatud, siis veebileht peaks automaatselt avanema järgmisel aadressil:**
 localhost:3000/evkk
 
 
