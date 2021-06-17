@@ -88,7 +88,7 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-### Peale seda sisestage järgnev käsklus:
+### Peale seda sisestage järgnevad käsklused:
 ```bash
 sudo apt-get update
 ```
