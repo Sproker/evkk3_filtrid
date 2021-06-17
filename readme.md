@@ -36,20 +36,21 @@ Jaagup Kippar
 
 ## Keskkonna ülesseadmine
 
-### Kirjutage Windowsi otsingusse Powershell ning avage rakendus administraatorina. Kui powershell tuli lahti, sisestage ükshaaval sinna järgnevad käsklused:
+### Kirjutage Windowsi otsingusse Powershell ning avage rakendus administraatorina. Kui powershell tuli lahti, sisestage sinna järgnevad käsklused:
 ```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-
+```
+```bash
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-### Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata.
+### **Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata!**
 
-### Kui taaskäivitus on tehtud, laadige alla järgnev komponent 
+### Kui taaskäivitus on tehtud, laadige alla järgnev komponent: 
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi 
 
-Peale seda käivitage allalaetud uuendus ning laske sellel end ära installeerida.
+Peale seda käivitage allalaetud komponent  ning laske sellel end ära installeerida.
 
 ### Kirjutage Windowsi otsingusse Powershell ning avage rakendus administraatorina. Kui powershell tuli lahti, sisestage sinna järgnev käsklus:
 ```bash
@@ -82,19 +83,17 @@ sudo apt-get install \
     lsb-release
 ```
 
-### Peale seda sisestage järgnev käsklus:
+### Siis sisestage ükshaaval kõik järgnevad käsklused:
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
-### Peale seda sisestage järgnev käsklus:
 ```bash
 echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-### Peale seda sisestage järgnevad käsklused:
 ```bash
 sudo apt-get update
 ```
@@ -107,7 +106,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo dockerd
 ```
 
-### Kirjutage Windowsi otsingusse Ubuntu ning avage uus Ubuntu aken ja sisestage järgnevad käsklused:
+### Kirjutage Windowsi otsingusse Ubuntu ning avage uus Ubuntu aken ja sisestage järgnev käsklus:
 ```bash
 sudo apt install nodejs && sudo apt install npm && sudo npm install -g yarn && sudo apt install unzip
 ```
