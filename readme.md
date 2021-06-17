@@ -5,10 +5,10 @@
 ### Eesmärk: 
 Interaktiivse statistika lehekülje eesmärgiks võimaldada huvilistel uurida ja võrrelda Eesti vahekeele korpuse statistiliseid andmeid graafilisel kujul. Kasutaja soovide kohaselt kujundatud graafiku või tabeli saab mugavalt alla laadida, mis laseb veebilehelt saadud andmeid juba iga kasutaja isiklikke vajaduste järgi edasi töödelda.
 
-### Viide instituudile
+### Viide instituudile:
 viidet instituudile ja paar sõna sellest, mille raames projekt loodud (tehtud selle ja selle raames….);
 
-### Viide litsentsile
+### Viide litsentsile:
 viidet litsentsile ning litsentsifail oleks repositooriumis (peaks olema MIT litsents).
 
 
@@ -22,11 +22,17 @@ viidet litsentsile ning litsentsifail oleks repositooriumis (peaks olema MIT lit
 ### Projekti osalised:
 
 Hans-Märten Liiu
+
 Jan-Erik Läänesaar
+
 Markus Veem
+
 Markus Tammeoja
+
 Ron Arnar Pehka
+
 Jaagup Kippar
+
 
 ## Keskkonna ülesseadmine
 
