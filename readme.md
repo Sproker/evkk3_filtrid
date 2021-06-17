@@ -91,6 +91,8 @@ echo \
 ### Peale seda sisestage järgnev käsklus:
 ```bash
 sudo apt-get update
+```
+```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
