@@ -6,10 +6,10 @@
 Interaktiivse statistika lehekülje eesmärgiks võimaldada huvilistel uurida ja võrrelda Eesti vahekeele korpuse statistiliseid andmeid graafilisel kujul. Kasutaja soovide kohaselt kujundatud graafiku või tabeli saab mugavalt alla laadida, mis laseb veebilehelt saadud andmeid juba iga kasutaja isiklikke vajaduste järgi edasi töödelda.
 
 ### Viide instituudile
-○ viidet instituudile ja paar sõna sellest, mille raames projekt loodud (tehtud selle ja selle raames….);
+viidet instituudile ja paar sõna sellest, mille raames projekt loodud (tehtud selle ja selle raames….);
 
 ### Viide litsentsile
-○ viidet litsentsile ning litsentsifail oleks repositooriumis (peaks olema MIT litsents).
+viidet litsentsile ning litsentsifail oleks repositooriumis (peaks olema MIT litsents).
 
 
 ### Kasutatud tehnoloogiad ja nende versioonid:
@@ -36,9 +36,12 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
+
 ### Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata.
 
-### Kui taaskäivitus on tehtud, laadige alla järgnev [komponent](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) 
+### Kui taaskäivitus on tehtud, laadige alla järgnev komponent 
+
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi 
 
 Peale seda käivitage allalaetud uuendus ning laske sellel end ära installeerida.
 
@@ -46,6 +49,7 @@ Peale seda käivitage allalaetud uuendus ning laske sellel end ära installeerid
 ```bash
 wsl --set-default-version 2
 ```
+
 ### Laadige Microsofti poest alla Ubuntu 20.4 Lts
 
 https://www.microsoft.com/store/apps/9n6svws3rx71
@@ -71,16 +75,19 @@ sudo apt-get install \
     gnupg \
     lsb-release
 ```
+
 ### Peale seda sisestage järgnev käsklus:
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
+
 ### Peale seda sisestage järgnev käsklus:
 ```bash
 echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
+
 ### Peale seda sisestage järgnev käsklus:
 ```bash
 sudo apt-get update
@@ -91,22 +98,27 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```bash
 sudo dockerd
 ```
+
 ### Kirjutage Windowsi otsingusse Ubuntu ning avage uus Ubuntu aken ja sisestage järgnevad käsklused:
 ```bash
 sudo apt install nodejs && sudo apt install npm && sudo npm install -g yarn && sudo apt install unzip
 ```
+
 ## Keskkonna käivitamine
 ```bash
 mkdir evkk && cd evkk && wget https://github.com/centre-for-educational-technology/evkk/archive/refs/heads/master.zip
 ```
+
 ### Kirjutage allolev käsklus, et kontrollida kas tarkvara laadis end alla:
 ```bash
 ls
 ```
+
 ### Kui tarkvara laadis end alla,  kirjutage allolev käsklus:
 ```bash
 unzip master.zip
 ```
+
 ### Seejärel kirjutage kõik allolevad käsklused eraldi Ubuntu akendesse.
 **Kindlasti oodake käsklused lõpuni enne kui liigute järgmisesse aknasse!**
 ```bash
@@ -115,6 +127,7 @@ cd evkk/evkk-main && sudo ./gradlew:db:bootRun --args 'clean migrate seed'
 cd evkk/evkk-main && ./gradlew :api:bootRun
 cd evkk/evkk-main && yarn --cwd=./ui install && yarn --cwd=./ui start
 ```
+
 **Kui kõik käsud said sisestatud, siis veebileht peaks automaatselt avanema järgmisel aadressil:**
 localhost:3000/evkk
 
@@ -133,6 +146,6 @@ cd evkk/evkk-main && yarn --cwd=./ui install && yarn --cwd=./ui start
 
 Paras puuks.
 
+### Kliendi hinnang: 
 
-### Kliendi hinnang: Homme saab teada
-
+Teame
