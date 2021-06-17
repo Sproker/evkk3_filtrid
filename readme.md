@@ -169,7 +169,3 @@ cd evkk/evkk-main && yarn --cwd=./ui install && yarn --cwd=./ui start
 ### Testid ja testimise tulemused:
 
 Paras puuks.
-
-### Kliendi hinnang: 
-
-Teame
