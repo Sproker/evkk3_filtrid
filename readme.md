@@ -37,14 +37,13 @@ Jaagup Kippar
 ## Keskkonna ülesseadmine
 
 ### Kirjutage Windowsi otsingusse Powershell ning avage rakendus administraatorina. Kui powershell tuli lahti, sisestage sinna järgnevad käsklused:
+### Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata!
 ```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 ```bash
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
-
-**Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata!**
 
 ### Kui taaskäivitus on tehtud, laadige alla järgnev komponent: 
 
