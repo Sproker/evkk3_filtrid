@@ -13,11 +13,11 @@ viidet litsentsile ning litsentsifail oleks repositooriumis (peaks olema MIT lit
 
 
 ### Kasutatud tehnoloogiad ja nende versioonid:
-*Ubuntu 20.4
-*Java jdk 11.0.11
-*Docker 19.03
-*NodeJS 10.19.0
-*Yarn 1.22.10
+* Ubuntu 20.4
+* Java jdk 11.0.11
+* Docker 19.03
+* NodeJS 10.19.0
+* Yarn 1.22.10
 
 ### Projekti osalised:
 
