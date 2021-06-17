@@ -110,6 +110,8 @@ sudo dockerd
 sudo apt install nodejs && sudo apt install npm && sudo npm install -g yarn && sudo apt install unzip
 ```
 
+
+
 ## Keskkonna käivitamine
 ```bash
 mkdir evkk && cd evkk && wget https://github.com/centre-for-educational-technology/evkk/archive/refs/heads/master.zip
@@ -142,6 +144,8 @@ cd evkk/evkk-main && yarn --cwd=./ui install && yarn --cwd=./ui start
 
 **Kui kõik käsud said sisestatud, siis veebileht peaks automaatselt avanema järgmisel aadressil:**
 localhost:3000/evkk
+
+
 
 
 ## Keskkonna käivitus peale esimese installeerimise lõpetamist ning arvuti taaskäivitamist
