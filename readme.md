@@ -44,7 +44,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-### **Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata!**
+**Peale käskude sisestamist tuleb arvuti taaskäivitada, muidu pole võimalik protsessi jätkata!**
 
 ### Kui taaskäivitus on tehtud, laadige alla järgnev komponent: 
 
